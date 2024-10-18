@@ -16,38 +16,59 @@ RECOMMENDED_INCREASE = 0.20
 
 
 #LECTURE SECTION 1
-file = open('module_4_dat.txt')
-data = file.readlines()
-
-file.close()
-print("File Closed")
-
+try:
+      file = open('module_4_data.txt')
+      data = file.readlines()
+      1/0
+      file.close()
+      print("File Closed")
+except FileNotFoundError as e:
+      print("File does not exist", e)
+except Exception as e:
+      print("General Exception", e)
+finally:
+      if file is not None:
+            file.close()
+            print("File Closed")
 
 #LECTURE SECTION 2
-for record in data:
-      items = record.split(',')
-      title = items[0]
-      name = items[1]
-      salary = float(items[2])
-      
-      #LECTURE SECTION 3
-      #REQUIREMENT:  NOTE RECORDS THAT EXCEED OR WILL EXCEED HIGH_SALARY AMOUNT
-      salary *= (1 - RECOMMENDED_INCREASE)
-      new_data.append([title,name,salary])
+try:
+      if len(data) == 0:
+            raise Exception("No data exist.")
+      else:
+            for record in data:
+                  items = record.split(',')
+                  title = items[0]
+                  name = items[1]
+                  salary = float(items[2])
+                  
+                  #LECTURE SECTION 3
+                  #REQUIREMENT:  NOTE RECORDS THAT EXCEED OR WILL EXCEED HIGH_SALARY AMOUNT
+                  salary *= (1 - RECOMMENDED_INCREASE)
+                  new_data.append([title,name,salary])
+except Exception as e:
+      print(e)
+
 
 
 
 #LECTURE SECTION 4
-file = open('updated_salaries.txt', 'w')
-for record in new_data:
-      row = ""
-      for index, item in enumerate(record):
-            row += str(item)
-            if index < len(record) - 1:
-                  row += (",")
-      row += '\n'
-      file.write(row)
-
+try:
+      file = open('updated_salaries.txt', 'w')
+      for record in new_data:
+            row = ""
+            for index, item in enumerate(record):
+                  row += str(item)
+                  if index < len(record) - 1:
+                        row += (",")
+            row += '\n'
+            file.write(row)
+except:
+      print("Exception writing data.")
+finally:
+      file.write("END OF FILE.")
+      file.close()
+      
 #LECTURE SECTION 5
 print("End of Program")
 
