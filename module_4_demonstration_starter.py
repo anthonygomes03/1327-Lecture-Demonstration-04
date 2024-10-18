@@ -28,7 +28,9 @@ try:
       file.close()
       print("File Closed")
 except FileNotFoundError as e:
-      logging.error("File does not exist", e)
+      logging.error("File does not exist")
+except ZeroDivisionError as e:
+      logging.error("ZeroDivisionError Exception: %s", e)
 except Exception as e:
       logging.error("General Exception", e)
 finally:
@@ -63,7 +65,7 @@ try:
                                         + f" with the planned"
                                         + f"{RECOMMENDED_INCREASE} increase.")
                         
-                  salary *= (1 - RECOMMENDED_INCREASE)
+                  salary *= (1 + RECOMMENDED_INCREASE)
                   new_data.append([title,name,salary])
 except Exception as e:
       logging.error("General Exception - Lecture 2", e)

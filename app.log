@@ -1,18 +1,19 @@
-2024-10-18 01:41:50,510 - INFO - File Closed
-2024-10-18 01:41:50,510 - WARNING -  Jo-Anne Sinclair's salary 140000.0  is currently above the recommended maximum is currently above the recommneded maximum120000.
-2024-10-18 01:41:50,510 - WARNING - Jo-Anne Sinclair's salary 140000.0 will be  of 120000 with the planned0.2 increase.
-2024-10-18 01:41:50,510 - WARNING -  Jackson Smith's salary 130000.0  is currently above the recommended maximum is currently above the recommneded maximum120000.
-2024-10-18 01:41:50,510 - WARNING - Jackson Smith's salary 130000.0 will be  of 120000 with the planned0.2 increase.
-2024-10-18 01:41:50,510 - WARNING - Susan Thomas's salary 120000.0 will be  of 120000 with the planned0.2 increase.
-2024-10-18 01:41:50,510 - WARNING - Richa Kaur's salary 110000.0 will be  of 120000 with the planned0.2 increase.
-2024-10-18 01:41:50,510 - WARNING -  Josee Benjamin's salary 140000.0  is currently above the recommended maximum is currently above the recommneded maximum120000.
-2024-10-18 01:41:50,510 - WARNING - Josee Benjamin's salary 140000.0 will be  of 120000 with the planned0.2 increase.
-2024-10-18 01:41:50,510 - WARNING -  Stien Pedersen's salary 140000.0  is currently above the recommended maximum is currently above the recommneded maximum120000.
-2024-10-18 01:41:50,510 - WARNING - Stien Pedersen's salary 140000.0 will be  of 120000 with the planned0.2 increase.
-2024-10-18 01:41:50,510 - WARNING -  Cheryl Guru's salary 140000.0  is currently above the recommended maximum is currently above the recommneded maximum120000.
-2024-10-18 01:41:50,510 - WARNING - Cheryl Guru's salary 140000.0 will be  of 120000 with the planned0.2 increase.
-2024-10-18 01:41:50,511 - DEBUG - Debug level message.
-2024-10-18 01:41:50,511 - INFO - Info level message.
-2024-10-18 01:41:50,511 - WARNING - Warning level message.
-2024-10-18 01:41:50,511 - ERROR - Error level message.
-2024-10-18 01:41:50,511 - CRITICAL - Critical level message.
+2024-10-18 02:53:09,812 - ERROR - ZeroDivisionError Exception: division by zero
+2024-10-18 02:53:09,812 - INFO - File Closed
+2024-10-18 02:53:09,812 - WARNING -  Jo-Anne Sinclair's salary 140000.0  is currently above the recommended maximum is currently above the recommneded maximum120000.
+2024-10-18 02:53:09,812 - WARNING - Jo-Anne Sinclair's salary 140000.0 will be  of 120000 with the planned0.2 increase.
+2024-10-18 02:53:09,812 - WARNING -  Jackson Smith's salary 130000.0  is currently above the recommended maximum is currently above the recommneded maximum120000.
+2024-10-18 02:53:09,812 - WARNING - Jackson Smith's salary 130000.0 will be  of 120000 with the planned0.2 increase.
+2024-10-18 02:53:09,812 - WARNING - Susan Thomas's salary 120000.0 will be  of 120000 with the planned0.2 increase.
+2024-10-18 02:53:09,812 - WARNING - Richa Kaur's salary 110000.0 will be  of 120000 with the planned0.2 increase.
+2024-10-18 02:53:09,812 - WARNING -  Josee Benjamin's salary 140000.0  is currently above the recommended maximum is currently above the recommneded maximum120000.
+2024-10-18 02:53:09,813 - WARNING - Josee Benjamin's salary 140000.0 will be  of 120000 with the planned0.2 increase.
+2024-10-18 02:53:09,813 - WARNING -  Stien Pedersen's salary 140000.0  is currently above the recommended maximum is currently above the recommneded maximum120000.
+2024-10-18 02:53:09,813 - WARNING - Stien Pedersen's salary 140000.0 will be  of 120000 with the planned0.2 increase.
+2024-10-18 02:53:09,813 - WARNING -  Cheryl Guru's salary 140000.0  is currently above the recommended maximum is currently above the recommneded maximum120000.
+2024-10-18 02:53:09,813 - WARNING - Cheryl Guru's salary 140000.0 will be  of 120000 with the planned0.2 increase.
+2024-10-18 02:53:09,813 - DEBUG - Debug level message.
+2024-10-18 02:53:09,813 - INFO - Info level message.
+2024-10-18 02:53:09,813 - WARNING - Warning level message.
+2024-10-18 02:53:09,813 - ERROR - Error level message.
+2024-10-18 02:53:09,813 - CRITICAL - Critical level message.
