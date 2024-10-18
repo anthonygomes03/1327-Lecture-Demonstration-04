@@ -8,6 +8,7 @@ Edited by: {Student Name}
 Date: {Date}
 Usage: 
 """
+import logging
 data = []
 new_data = []
 
@@ -16,6 +17,10 @@ RECOMMENDED_INCREASE = 0.20
 
 
 #LECTURE SECTION 1
+logging.basicConfig(level=logging.DEBUG,
+                    filename='app.log', 
+                    filemode='w',
+                    format='%(asctime)s - %(levelname)s - %(message)s')
 try:
       file = open('module_4_data.txt')
       data = file.readlines()
@@ -23,13 +28,13 @@ try:
       file.close()
       print("File Closed")
 except FileNotFoundError as e:
-      print("File does not exist", e)
+      logging.error("File does not exist", e)
 except Exception as e:
-      print("General Exception", e)
+      logging.error("General Exception", e)
 finally:
       if file is not None:
             file.close()
-            print("File Closed")
+            logging.info("File Closed")
 
 #LECTURE SECTION 2
 try:
@@ -44,10 +49,24 @@ try:
                   
                   #LECTURE SECTION 3
                   #REQUIREMENT:  NOTE RECORDS THAT EXCEED OR WILL EXCEED HIGH_SALARY AMOUNT
+                  if salary > HIGH_SALARY:
+                        logging.warning(f" {name}'s salary {salary} "
+                                        + f" is currently above"
+                                        + f" the recommended maximum"
+                                        + f" is currently above"
+                                        + f" the recommneded maximum"
+                                        + f"{HIGH_SALARY}.")
+                        
+                  if salary * (1 + RECOMMENDED_INCREASE) > HIGH_SALARY:
+                        logging.warning(f"{name}'s salary {salary} will be "
+                                        + f" of {HIGH_SALARY}"
+                                        + f" with the planned"
+                                        + f"{RECOMMENDED_INCREASE} increase.")
+                        
                   salary *= (1 - RECOMMENDED_INCREASE)
                   new_data.append([title,name,salary])
 except Exception as e:
-      print(e)
+      logging.error("General Exception - Lecture 2", e)
 
 
 
@@ -64,11 +83,16 @@ try:
             row += '\n'
             file.write(row)
 except:
-      print("Exception writing data.")
+      logging.error("Exception writing data.")
 finally:
       file.write("END OF FILE.")
       file.close()
-      
+
 #LECTURE SECTION 5
+logging.debug('Debug level message.')
+logging.info('Info level message.')
+logging.warning('Warning level message.')
+logging.error('Error level message.')
+logging.critical('Critical level message.')
 print("End of Program")
 
